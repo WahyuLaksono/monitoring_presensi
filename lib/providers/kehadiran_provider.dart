@@ -3,9 +3,9 @@ import 'package:monitor_presensi/models/data_layer.dart';
 
 class AttendanceProvider with ChangeNotifier {
   List<Mahasiswa> mahasiswas = [
-    Mahasiswa(name: 'Ali'),
-    Mahasiswa(name: 'Budi'),
-    Mahasiswa(name: 'Citra'),
+    Mahasiswa(name: 'Ali', isPresent: false),
+    Mahasiswa(name: 'Budi', isPresent: false),
+    Mahasiswa(name: 'Citra', isPresent: false),
   ];
 
   List<Kehadiran> kehadirans = [];

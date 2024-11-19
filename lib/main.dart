@@ -43,14 +43,16 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
+        selectedItemColor: Colors.blue,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.add),
-            label: 'Pencatatan',
+            icon: Icon(Icons.today),
+            label: 'Presensi',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.history),
             label: 'Riwayat',
+            backgroundColor: Colors.black,
           ),
         ],
       ),
